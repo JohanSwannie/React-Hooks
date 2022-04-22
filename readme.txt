@@ -1,1 +1,1 @@
-This Repository will contain stacks of general knowledge regarding Web Development
+This Repository will contain a sample of a Website with it's layouts
