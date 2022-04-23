@@ -1,3 +1,5 @@
+/* Create a keyframe for initial automatic sliding om images and the video - this will also cater when manual intervention takes place for manual sliding choices */
+
 @keyframes slideThem {
   0% {
     left: 0
@@ -40,6 +42,8 @@
   }
 }
 
+/* Setting up the body properties */
+
 body {
   margin: 0;
   padding: 0;
@@ -48,6 +52,8 @@ body {
   background: gray;
   user-select: none
 }
+
+/* Setting up the slider page properties */
 
 .slider_page {
   justify-content: center;
@@ -63,6 +69,8 @@ body {
   text-align: center
 }
 
+/* Setting up the Slider for the slides and make sure it's position is absolute and it fit well within the window */
+
 .slider {
   position: absolute;
   top: 10%;
@@ -73,6 +81,10 @@ body {
   height: 80%
 }
 
+/* Setting up the slider figure element - Make sure it is in a relative position - within each of the 5 figures elements 
+will be the order of the images/video to be slided
+ */
+
 .slider figure {
   position: relative;
   width: 500%;
@@ -80,11 +92,15 @@ body {
   left: 0
 }
 
+/* Set the position and size of the images  */
+
 .slider figure img {
   float: left;
   width: 20%;
   height: 500px
 }
+
+/* Set the position and size of the video  */
 
 .slider figure iframe {
   float: left;
@@ -92,9 +108,13 @@ body {
   height: 500px
 }
 
+/* Set as the initial slider the first figure element that will ensure that automatic sliding will start immediately upon the window load */ 
+
 .anim1_footage {
   display: block
 }
+
+/* Set the other 4 figure elements to be invisible, because their purpose is for manual intervention sliding purposes */ 
 
 .anim2_footage {
   display: none
@@ -112,13 +132,19 @@ body {
   display: none
 }
 
+/* Cater for the perform_animation class to perform the "slideThem" animation for either automatic sliding oer when manual intervention take place  */
+
 .perform_animation {
   animation: slideThem 25s infinite
 }
 
+/* Cater for the middle button when manual choice is exercised - This will stop all animations and make provision for the user to either play the video or not */
+
 .perform_only {
   animation: slideThem .1s 1
 }
+
+/* Setting the position for the manual buttons  */
 
 .manual_slider {
   position: absolute;
@@ -126,6 +152,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%)
 }
+
+/* Setting the size, borders, margins and background for the manual buttons */
 
 .slide_button {
   width: 1.1rem;
@@ -136,9 +164,13 @@ body {
   margin: .5rem
 }
 
+/* Setting the Bootstrap container-fluid class to display grid */
+
 .container-fluid {
   display: grid
 }
+
+/* Setting all the properties for the sidebar navigation process  */
 
 .navbar {
   display: block;
@@ -176,6 +208,8 @@ li a {
   background: #F00F00;
   color: #303030
 }
+
+/* Properties for the summary page cards  */
 
 .card {
   display: flex;
@@ -296,6 +330,8 @@ button {
   text-decoration: none
 }
 
+/* Properties for the Tui & Kudu pages  */
+
 .wildlife {
   color: #fff;
   font-size: 1rem;
@@ -332,6 +368,8 @@ b {
   padding-bottom: 1rem
 }
 
+/* Properties and control for the text overlay on the summary page  */
+
 .original__information {
   position: absolute;
   top: 3rem;
@@ -360,6 +398,8 @@ b {
   color: #fff;
   transition: 2s ease-in-out
 }
+
+/* Properties for the footer contact page  */
 
 .wildlife_footer {
   height: 100vh;
@@ -500,6 +540,8 @@ h6 {
   width: 2rem;
   font-size: .85rem
 }
+
+/* Setting up all media queries for a responsive website */
 
 @media (max-width: 900px) {
   .slider figure img {
