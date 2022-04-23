@@ -53,8 +53,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #63d471;
-  background-image: linear-gradient(315deg, #63d471 0%, #233329 74%)
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%)
 }
 
 #homeHeading {
@@ -183,24 +183,27 @@ li a {
   border-style: double;
   width: 400px;
   height: 100vh;
-  margin: auto;
-  background-color: #D1D1D8
+  margin: auto
 }
 
 .card1 {
-  margin-left: 3.6rem
+  background-color: #f2cf07;
+  background-image: linear-gradient(315deg, #f2cf07 0%, #55d284 74%)
 }
 
 .card1:hover {
-  background: linear-gradient(270deg, #FFF580, #FFF888, #FFF580)
+  background-color: #f2cf07;
+  background-image: linear-gradient(315deg, #f2cf07 0%, #55d284 74%)
 }
 
 .card3 {
-  margin-right: 3.6rem
+  background-color: #f2cf07;
+  background-image: linear-gradient(315deg, #f2cf07 0%, #55d284 74%)
 }
 
 .card3:hover {
-  background: linear-gradient(270deg, #FFF580, #FFF888, #FFF580)
+  background-color: #f2cf07;
+  background-image: linear-gradient(315deg, #f2cf07 0%, #55d284 74%)
 }
 
 .card__content {
@@ -216,7 +219,8 @@ li a {
 }
 
 .card2 {
-  background: linear-gradient(270deg, #FFF580, #FFF888, #FFF580)
+  background-color: #84fb95;
+  background-image: linear-gradient(315deg, #84fb95 0%, #cef576 74%)
 }
 
 .card2__info {
@@ -312,7 +316,8 @@ button {
 }
 
 .the_tui {
-  background: #303030
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%)
 }
 
 .the_kudu {
@@ -353,7 +358,7 @@ b {
 }
 
 .card2BgColor {
-  background: #343230;
+  background: linear-gradient(270deg, #44A08D, #093637);
   color: #fff;
   transition: 2s ease-in-out
 }
