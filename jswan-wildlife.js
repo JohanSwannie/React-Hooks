@@ -1,4 +1,4 @@
-// Code to toggle for overlay text for te middle card on the summary page
+// Code to toggle for overlay text for the second or middle card on the summary page
 
 $('.info__icon').click(function() {
   $('.original__information').toggleClass('overlayText');
