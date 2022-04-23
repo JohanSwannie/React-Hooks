@@ -113,6 +113,10 @@ body {
   animation: slideThem 25s infinite
 }
 
+.perform_only {
+  animation: slideThem .1s 1
+}
+
 .auto_slider {
   position: absolute;
   bottom: 3%;
