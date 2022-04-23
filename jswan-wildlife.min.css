@@ -1,3 +1,5 @@
+/* Set up Keyframe for Automatic Sliding of images */
+
 @keyframes slideThem {
   0% {
     left: 0
@@ -40,6 +42,8 @@
   }
 }
 
+/* Set up properties for the body element  */
+
 body {
   margin: 0;
   padding: 0;
@@ -48,6 +52,8 @@ body {
   background: gray;
   user-select: none
 }
+
+/* Set up properties for the slider page  */
 
 .slider_page {
   justify-content: center;
@@ -60,6 +66,8 @@ body {
   text-align: center
 }
 
+/* Set the position properties for the slider  */
+
 .slider {
   position: absolute;
   top: 10%;
@@ -70,12 +78,16 @@ body {
   height: 80%
 }
 
+/* Place the slider relatively and set width for smooth sliding in conjunction with the keyframe "slideThem" */
+
 .slider figure {
   position: relative;
   width: 500%;
   margin: 0;
   left: 0
 }
+
+/* Set the position, width and height for the 4 images and the iframe element for the video  */
 
 .slider figure img {
   float: left;
@@ -88,6 +100,8 @@ body {
   width: 20%;
   height: 500px
 }
+
+/* Set the first slider image to be visible and the other 4 to be invisible - This will be the initial state */
 
 .anim1_footage {
   display: block
@@ -109,15 +123,21 @@ body {
   display: none
 }
 
+/* Animation for 4 images and video - This is the initial state for automatic sliding as well as When buttons 1, 2, 4 and 5 are clicked in manual mode */
+
 .perform_animation {
   animation: slideThem 25s infinite
 }
+
+/* Animation in manual mode only and only when button 3 for video is clicked - no sliding for the 4 images will take place when this is performed */ 
 
 .perform_only {
   animation: slideThem .1s 1
 }
 
-.auto_slider {
+/* Manual slider properties  */
+
+.manual_slider {
   position: absolute;
   bottom: 3%;
   left: 50%;
@@ -133,9 +153,13 @@ body {
   margin: .5rem
 }
 
+/* Bootstrap container-fluid class set to display grid */
+
 .container-fluid {
   display: grid
 }
+
+/* Setting up all the sidebar navigation properties  */
 
 .navbar {
   display: block;
@@ -172,6 +196,8 @@ li a {
   background: #F00F00;
   color: #303030
 }
+
+/* Setting upp all the card proerties for the summary page  */
 
 .card {
   border: 7px solid #030303;
@@ -279,6 +305,8 @@ button {
   text-decoration: none
 }
 
+/* Setting up all the properties for the Tui & Kudu Pages  */
+
 .wildlife {
   color: #fff;
   font-size: 1rem;
@@ -314,6 +342,8 @@ b {
   padding-bottom: 1rem
 }
 
+/* Setting up the properties for the middle card on the summary page  */
+
 .original__information {
   position: absolute;
   top: 3rem;
@@ -326,6 +356,8 @@ b {
   padding: 15px;
   color: rgba(0, 0, 0, 0)
 }
+
+/* Setting up the properties for the overlay text on the middle card on the summary page  */
 
 .triggerInformation {
   transition: 2s ease-in-out;
@@ -342,6 +374,8 @@ b {
   color: #fff;
   transition: 2s ease-in-out
 }
+
+/* Setting up all the footer properties */
 
 .wildlife_footer {
   height: 100vh;
@@ -482,6 +516,8 @@ h6 {
   width: 2rem;
   font-size: .85rem
 }
+
+/* Setting u all the media queries for web responsiveness  */
 
 @media (max-width: 900px) {
   .slider figure img {
