@@ -175,17 +175,14 @@ will be the order of the images/video to be slided
 .navbar {
   display: block;
   position: fixed;
-  right: -15px;
+  right: 0;
   top: 0;
-  align-items: center;
-  justify-content: center;
-  height: 20vh;
   z-index: 999
 }
 
 li {
   list-style: none;
-  margin: 1rem
+  margin: 1rem 0
 }
 
 li a {
@@ -194,7 +191,7 @@ li a {
 
 .nav__link {
   writing-mode: vertical-rl;
-  background: linear-gradient(to right, #FAB607, gray, #040005, gray, #FAB607);
+  background: linear-gradient(to right, gray, #040005, gray);
   color: #fff;
   font-size: 0.7rem;
   font-weight: bold;
@@ -205,8 +202,11 @@ li a {
 
 .nav__link:hover {
   font-weight: bold;
-  background: #F00F00;
-  color: #303030
+  background: linear-gradient(30deg, darkgreen, #090909, darkgreen);
+  color: #fff;
+  outline: antiquewhite;
+  outline-style: solid;
+  transition: .4s
 }
 
 /* Properties for the summary page cards  */
@@ -268,36 +268,20 @@ li a {
   resize: none
 }
 
-button {
-  width: auto;
-  padding: 0
-}
-
 .buttons {
+  width: auto;
+  padding: 0;
   font-size: 0.65rem
 }
 
 .bbtn {
   position: absolute;
-  bottom: 1%;
+  bottom: 0;
   right: 2%;
-  background: #8b4513;
-  padding: .2rem;
-  box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.3), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: orangered;
+  border: 1.2px solid #000;
+  padding: .25rem;
   z-index: 100
-}
-
-.bbtn:hover {
-  background: #edc9af;
-  font-size: .7rem;
-  padding: .2rem;
-  transition: 1s ease-in-out
-}
-
-.bbtn:hover a {
-  color: #000;
-  font-weight: 900;
-  transition: 1s ease-in-out
 }
 
 .bbtn a {
@@ -306,28 +290,18 @@ button {
   text-decoration: none
 }
 
-.tbtn {
+.bbtn:hover a {
+  color: #000;
+  font-size: .7rem;
+  font-weight: 900;
+  transition: .7s ease-in-out
+}
+
+.tbtn i {
   position: absolute;
-  top: .4rem;
-  right: .4rem;
-  width: 1.7rem;
-  height: 1.7rem;
-  border-radius: 60%;
-  background: crimson;
-  border: 2px solid red;
-  box-shadow: inset 12px 12px 12px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  top: .3rem;
+  right: .3rem;
   z-index: 100
-}
-
-.tbtn:hover {
-  width: 2.4rem;
-  height: 2.4rem;
-  transition: 1.5s;
-  border: 1.5px solid red
-}
-
-.tbtn a {
-  text-decoration: none
 }
 
 /* Properties for the Tui & Kudu pages  */
