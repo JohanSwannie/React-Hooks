@@ -241,14 +241,34 @@ li {
 		}
 	}
 }
-.tbtn {
-	i {
-		position: absolute;
-		top: .3rem;
-		right: .3rem;
-		z-index: 100;
-	}
+
+.fa-stack {
+  position: absolute;
+  top: .3rem;
+  right: .3rem;
+  z-index: 100;
 }
+
+.icon-a {
+    color: darkgray;
+    font-size: 1.1rem;
+}
+
+.icon-b {
+    color: crimson;
+    background: lightgreen;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    font-size: 1.1rem;
+}
+
+.icon-b:hover {
+  background: #000;
+  transition: 1s;
+}
+
 .wildlife {
 	color: $color_1;
 	font-size: 1rem;
