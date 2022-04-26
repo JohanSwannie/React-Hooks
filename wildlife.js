@@ -51,8 +51,6 @@ $('#sBtn2').click(function() {
     $('.anim2_footage').addClass('perform_animation');
     $('.anim2_footage').css("display", "block");
   }, 200);
-  $('#video5').trigger('play');
-  $('#video5').trigger('pause');
 });
 
 //Check if button Three is clicked -  - remove all other animation performances 
