@@ -1,1 +1,1 @@
-This Repository will contain a sample of a Website with it's layouts
+This Repository will contain all the different JavaScript Design Patterns
